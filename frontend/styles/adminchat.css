@@ -1,0 +1,6 @@
+.chat-content {
+  border: 5px solid;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 25px 25px 0;
+}
