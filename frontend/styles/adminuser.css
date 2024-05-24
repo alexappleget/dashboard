@@ -1,6 +1,70 @@
 .user-content {
-  border: 5px solid;
   height: 100%;
   width: 100%;
   border-radius: 0 25px 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-content-h3 {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.user-content-h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user-content-p {
+  margin-bottom: 10px;
+}
+
+.createUser {
+  display: flex;
+  flex-direction: column;
+}
+
+.createUser label {
+  margin-top: 5px;
+}
+
+.createUser button {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  margin-inline: auto;
+  border-radius: 25px;
+  border: none;
+  background-color: #4158d0;
+  color: #fff;
+}
+
+.createUser button:hover {
+  background-color: #fff;
+  color: #4158d0;
+  border: 3px solid #4158d0;
+}
+
+.existingUsers h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.user {
+  width: 1200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user h4 {
+  margin-right: 5px;
+}
+
+.user p {
+  margin-right: 30px;
 }

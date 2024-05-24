@@ -1,15 +1,15 @@
 import { useState } from "react";
 import "../styles/adminlogin.css";
+import axios from "axios";
 
-function AdminLogin({ setAdminLoggedIn }) {
-  const [username, setUsername] = useState("");
+function AdminLogin({ setAdminLoggedIn, username, setUsername }) {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleLogin = async () => {
     try {
       const body = { username, password };
-      const res = await axios.post("https://localhost/5174/adminlogin", body, {
+      const res = await axios.post("http://localhost:5174/adminlogin", body, {
         headers: { "Content-Type": "application/json" },
       });
       console.log(res.data);

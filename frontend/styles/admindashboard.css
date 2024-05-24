@@ -7,10 +7,9 @@
 }
 
 .dashboard {
-  border: 1px solid;
-  background-color: #fff;
+  background-color: #ffffff6f;
   height: 90%;
-  width: 95%;
+  width: 85%;
   border-radius: 25px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   display: flex;

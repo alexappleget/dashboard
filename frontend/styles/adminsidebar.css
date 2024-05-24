@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50px;
-  width: 50px;
   background-color: #4158d0;
   height: 100%;
-  width: 5%;
+  width: 6%;
 }
 
 .button-bar button:last-child {
@@ -57,7 +55,7 @@
   border: none;
 }
 
-.settings {
+.todos {
   height: 50px;
   width: 100%;
   font-size: 32px;

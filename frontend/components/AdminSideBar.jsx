@@ -5,7 +5,7 @@ import {
   FaDoorOpen,
   FaComment,
   FaUserPlus,
-  FaCog,
+  FaList,
 } from "react-icons/fa";
 
 function AdminSideBar({ setAdminLoggedIn, adminActive, setAdminActive }) {
@@ -21,6 +21,12 @@ function AdminSideBar({ setAdminLoggedIn, adminActive, setAdminActive }) {
         <FaHome />
       </button>
       <button
+        className={adminActive === "AdminTasks" ? "sideBtn-active" : "todos"}
+        onClick={() => setAdminActive("AdminTasks")}
+      >
+        <FaList />
+      </button>
+      <button
         className={adminActive === "AdminChat" ? "sideBtn-active" : "chat"}
         onClick={() => setAdminActive("AdminChat")}
       >
@@ -31,9 +37,6 @@ function AdminSideBar({ setAdminLoggedIn, adminActive, setAdminActive }) {
         onClick={() => setAdminActive("AdminUser")}
       >
         <FaUserPlus />
-      </button>
-      <button className="settings">
-        <FaCog />
       </button>
       <button className="logout" onClick={() => setAdminLoggedIn(false)}>
         <FaDoorOpen />
